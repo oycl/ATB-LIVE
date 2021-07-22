@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+      <template id="custom_sale_order_portal_template_inherit" inherit_id="sale.sale_order_portal_content">
+           <xpath expr="//section[hasclass('mt-5')]" position="after">
+                 <section class="mt-5">
+                    <h3 class="">Weitere Kontraktinformationen</h3>
+                    <hr class="mt-0 mb-1"/>
+                    <p t-if="sale_order.incoterm"><span>Lieferbedingung: </span><span t-esc="sale_order.incoterm.name"/></p>
+                     <p t-if="sale_order.x_studio_paritt"><span>Parität: </span><span t-esc="sale_order.x_studio_paritt"/></p>
+                     <p t-if="sale_order.commitment_date"><span>Lieferdatum: </span><span t-esc="sale_order.commitment_date"/></p>
+                     <p t-if="sale_order.x_studio_termininfo"><span>Termininfo: </span><span t-esc="sale_order.x_studio_termininfo"/></p>
+                     <p t-if="sale_order.x_studio_verpackung"><span>Verpackung: </span><span t-esc="sale_order.x_studio_verpackung"/></p>
+                     <p t-if="sale_order.x_studio_lieferweg"><span>Lieferweg: </span><span t-field="sale_order.x_studio_lieferweg"/></p>
+                </section>
+            </xpath>
+        </template>
+  </data>
+</odoo>
