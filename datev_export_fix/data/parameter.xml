@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="datev_export_fix.datev_payable_start_count" model="ir.config_parameter">
+        <field name="key">l10n_de.datev_payable_start_count</field>
+        <field name="value">700000000</field>
+    </record>
+</odoo>

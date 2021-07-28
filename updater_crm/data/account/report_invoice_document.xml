@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="report_invoice_document_much_crm_custom" inherit_id="updater_account.report_invoice_document_much_custom">
+    <xpath expr="//div[hasclass('page')]" position="after">
+      <div class="mt-4">
+        <span t-if="o.team_id and o.team_id.report_text" t-field="o.team_id.report_text" />
+      </div>
+    </xpath>
+  </template>
+</odoo>

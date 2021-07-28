@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_crm
+# much. GmbH <info@muchconsulting.de>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-07 08:28+0000\n"
+"PO-Revision-Date: 2021-07-07 10:43+0200\n"
+"Last-Translator: much. GmbH <info@muchconsulting.de>\n"
+"Language-Team: English US <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: en_US\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#. module: updater_crm
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: updater_crm
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team__id
+msgid "ID"
+msgstr "ID"
+
+#. module: updater_crm
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team____last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: updater_crm
+#: model_terms:ir.ui.view,arch_db:updater_crm.report_invoice_document_bw_crm_custom
+msgid "Please transfer the amount by"
+msgstr "Please transfer the amount by"
+
+#. module: updater_crm
+#: code:addons/updater_crm/models/crm_team.py:0
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team__report_text
+#, python-format
+msgid "Report Text"
+msgstr "Report Text"
+
+#. module: updater_crm
+#: code:addons/updater_crm/models/crm_team.py:0
+#: model:ir.model.fields,help:updater_crm.field_crm_team__report_text
+#, python-format
+msgid "Sale/Invoice text that will be displayed in the reports."
+msgstr "Sale/Invoice text that will be displayed in the reports."
+
+#. module: updater_crm
+#: model:ir.model,name:updater_crm.model_crm_team
+msgid "Sales Team"
+msgstr "Sales Team"
+
+#. module: updater_crm
+#: model_terms:ir.ui.view,arch_db:updater_crm.report_invoice_document_bw_crm_custom
+msgid "Thank you for your cooperation."
+msgstr "Thank you for your cooperation."

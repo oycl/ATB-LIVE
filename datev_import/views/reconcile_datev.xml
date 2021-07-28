@@ -1,0 +1,36 @@
+<odoo>
+     <record id="reconcile_datev_wizard_form" model="ir.ui.view">
+        <field name="name">datev_import.reconcile_wizard.form</field>
+        <field name="model">datev_import.reconcile</field>
+        <field name="arch" type="xml">
+            <form string="Reconcile Datev">
+                <sheet>
+                    <group>
+                        <field name="only_datev"/>
+                        <field name="from_date" string="from" widget="daterange" options='{"related_end_date": "to_date"}'/>
+                        <field name="to_date" string="to" widget="daterange" options='{"related_start_date": "from_date"}'/>
+                    </group>
+                </sheet>
+                <footer>
+                    <div>
+                      <p style="float:left;">
+                           <button string='Run' name="reconcile" type="object" class="oe_highlight"/>
+                      </p>
+                      <p style="float:right;">
+                          <button string="Cancel" class="oe_link" special="cancel"/>
+                      </p>
+                    </div>
+                    <div style="clear:both;"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+    <record id="reconcile_datev_wizard_action" model="ir.actions.act_window">
+        <field name="name">Reconcile Datev Wizard</field>
+        <field name="res_model">datev_import.reconcile</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="reconcile_datev_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_action_reconcile_datev" name="Reconcile Datev" action="reconcile_datev_wizard_action" sequence="5" parent="account.menu_finance_entries_actions"/>
+</odoo>

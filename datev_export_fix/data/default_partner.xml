@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="default_column_A" model="datev_export.partner_column">
+        <field name="header">Konto</field>
+        <field name="value">code</field>
+    </record>
+    <record id="default_column_B" model="datev_export.partner_column">
+        <field name="header">Name (AdressatentypUnternehmen)</field>
+        <field name="value">company_name</field>
+    </record>
+    <record id="default_column_C" model="datev_export.partner_column">
+        <field name="header">Name (Adressatentypnatürl. Person)</field>
+        <field name="value">person_name</field>
+    </record>
+    <record id="default_column_D" model="datev_export.partner_column"/>
+    <record id="default_column_E" model="datev_export.partner_column"/>
+    <record id="default_column_F" model="datev_export.partner_column"/>
+    <record id="default_column_G" model="datev_export.partner_column">
+        <field name="header">Adressatentyp</field>
+        <field name="value">natural</field>
+    </record>
+</odoo>

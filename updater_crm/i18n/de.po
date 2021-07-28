@@ -1,0 +1,62 @@
+#
+#  <>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-07 08:30+0000\n"
+"PO-Revision-Date: 2021-07-07 16:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: de\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#. module: updater_crm
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: updater_crm
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team__id
+msgid "ID"
+msgstr "ID"
+
+#. module: updater_crm
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: updater_crm
+#: model_terms:ir.ui.view,arch_db:updater_crm.report_invoice_document_bw_crm_custom
+msgid "Please transfer the amount by"
+msgstr "Bitte überweisen Sie den Betrag bis"
+
+#. module: updater_crm
+#: code:addons/updater_crm/models/crm_team.py:0
+#: model:ir.model.fields,field_description:updater_crm.field_crm_team__report_text
+#, python-format
+msgid "Report Text"
+msgstr "Vorschau"
+
+#. module: updater_crm
+#: code:addons/updater_crm/models/crm_team.py:0
+#: model:ir.model.fields,help:updater_crm.field_crm_team__report_text
+#, python-format
+msgid "Sale/Invoice text that will be displayed in the reports."
+msgstr "Verkaufs-/Rechnungstext, der in den Berichten angezeigt werden soll."
+
+#. module: updater_crm
+#: model:ir.model,name:updater_crm.model_crm_team
+msgid "Sales Team"
+msgstr "Verkaufsteam"
+
+#. module: updater_crm
+#: model_terms:ir.ui.view,arch_db:updater_crm.report_invoice_document_bw_crm_custom
+#, fuzzy
+msgid "Thank you for your cooperation."
+msgstr "Vielen Dank für Ihre Mitarbeit."

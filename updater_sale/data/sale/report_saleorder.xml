@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="report_saleorder_much_custom" inherit_id="sale.report_saleorder">
+    <xpath expr="/t" position="replace">
+      <t t-name="sale.report_saleorder">
+        <t t-call="web.html_container">
+          <t t-foreach="docs" t-as="doc">
+            <t t-set="report" t-value="doc.company_id.external_report_layout_id.name.split('_')[-1] if doc.company_id.external_report_layout_id and doc.company_id.external_report_layout_id.name.split('_')[-1] not in ['background', 'boxed', 'clean', 'standard', 'document'] else ''" />
+            <t t-if="report != ''" t-call="updater_sale.report_saleorder_document_{{report}}" t-lang="doc.partner_id.lang" />
+            <t t-else="" t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang" />
+          </t>
+        </t>
+      </t>
+    </xpath>
+  </template>
+</odoo>

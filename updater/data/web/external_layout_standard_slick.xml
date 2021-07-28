@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="external_layout_standard_slick" model="ir.ui.view">
+    <field name="name">external_layout_standard_slick</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+<t t-name="updater.external_layout_standard_slick">
+  <div t-attf-class="header o_company_#{company.id}_layout">
+    <div class="row">
+      <div class="col-8" name="company_address">
+        <div style="padding-top: 150px;font-size: 12px;">
+          <span style="border-bottom: 1px solid black;">
+            <t t-esc="company.name" />&#160;|&#160;<t t-esc="company.street" />&#160;|&#160;<t t-esc="company.zip" />&#160;<t t-esc="company.city" />
+          </span>
+        </div>
+      </div>
+      <div class="col-4 align-self-center" style="padding-left: 20px;">
+        <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="max-height: 80px; margin-top: 85px;" alt="Logo" />
+      </div>
+    </div>
+    <div t-if="company.logo or company.report_header" class="row zero_min_height">
+      <div class="col-12"></div>
+    </div>
+  </div>
+
+  <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+    <!-- <t t-call="web.address_layout"/> -->
+    <t t-raw="0" />
+  </div>
+
+  <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout" style="font-size: 12px;">
+    <div t-if="report_type == 'pdf'" class="row mb-2">
+      <div class="col-7">
+      </div>
+      <div class="col-4 text-right ml-4">
+        Page&#160;<span class="page" />&#160;of&#160;<span class="topage" />
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-3">
+        <ul class="list-inline">
+          <li t-if="company.name" class="list-inline-item d-inline">
+            <span t-field="company.name" />
+            <br />
+          </li>
+          <li t-if="company.street" class="list-inline-item d-inline">
+            <span t-field="company.street" />
+            <br />
+          </li>
+          <li t-if="company.zip and company.city" class="list-inline-item d-inline">
+            <span t-field="company.zip" />&#160;<span t-field="company.city" />
+            <br />
+          </li>
+          <li t-if="company.phone" class="list-inline-item d-inline">
+            Telephone
+            <span t-field="company.phone" />
+            <br />
+            <br />
+          </li>
+        </ul>
+      </div>
+      <div class="col-2 ml-5">
+        <ul class="list-inline">
+          <t t-foreach="company.partner_id.bank_ids" t-as="bank">
+            <li t-if="bank.bank_id" class="list-inline-item d-inline">
+              <span t-field="bank.bank_id.name" />
+              <br />
+            </li>
+            <li t-if="bank" class="list-inline-item d-inline">
+              IBAN:
+              <span t-field="bank.acc_number" />
+              <br />
+            </li>
+            <li t-if="bank" class="list-inline-item d-inline">
+              BIC:
+              <span t-field="bank.bank_bic" />
+              <br />
+            </li>
+          </t>
+          <li t-if="company.vat" class="list-inline-item d-inline">
+            VAT ID:
+            <span t-field="company.vat" />
+            <br />
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 ml-5">
+        <ul class="list-inline">
+          <li t-if="company.email" class="list-inline-item d-inline">
+            Email:
+            <span t-field="company.email" />
+            <br />
+          </li>
+          <li t-if="company.website" class="list-inline-item d-inline">
+            Internet:
+            <span t-field="company.website" />
+            <br />
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 ml-4">
+        <ul class="list-inline">
+          <li t-if="company.managing_partner" class="list-inline-item d-inline">Managing Partner:</li>
+          <li t-if="company.managing_partner" class="list-inline-item d-inline">
+            <span>
+              <t t-raw="company.managing_partner" />
+              <br />
+            </span>
+          </li>
+          <li t-if="company.company_registry" class="d-inline">
+            <span t-field="company.company_registry" />
+            <br />
+          </li>
+        </ul>
+      </div>
+      <div name="financial_infos">
+        <span t-field="company.report_footer" />
+      </div>
+    </div>
+  </div>
+</t>
+    </field>
+  </record>
+</odoo>

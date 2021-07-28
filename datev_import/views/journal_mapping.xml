@@ -1,0 +1,13 @@
+<odoo>
+    <record id="journal_mapping_view" model="ir.ui.view">
+        <field name="name">Account to journal mapping</field>
+        <field name="model">datev_import.journal_mapping</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom" create="true">
+                <field name="sequence" widget="handle"/>
+                <field name="account_id" required="0"/>
+                <field name="journal_id" required="1"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

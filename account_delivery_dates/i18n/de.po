@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_delivery_dates
+# much. GmbH <info@muchconsulting.de>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-09 10:44+0000\n"
+"PO-Revision-Date: 2020-12-09 11:50+0100\n"
+"Last-Translator: much. GmbH <info@muchconsulting.de>\n"
+"Language-Team: German <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: de_DE\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#. module: account_delivery_dates
+#: model:ir.model.fields,field_description:account_delivery_dates.field_account_move__delivery_date_error_message
+msgid "Delivery Date Error Message"
+msgstr "Leistungsdatum Error Nachricht"
+
+#. module: account_delivery_dates
+#: model:ir.model.fields,field_description:account_delivery_dates.field_account_move__delivery_end_date
+#: model:ir.model.fields,field_description:account_delivery_dates.field_account_move_line__delivery_end_date
+#: model:ir.model.fields,field_description:account_delivery_dates.field_sale_order__delivery_end_date
+msgid "Delivery End date"
+msgstr "Leistungsenddatum"
+
+#. module: account_delivery_dates
+#: model:ir.model.fields,field_description:account_delivery_dates.field_account_move__delivery_start_date
+#: model:ir.model.fields,field_description:account_delivery_dates.field_account_move_line__delivery_start_date
+#: model:ir.model.fields,field_description:account_delivery_dates.field_sale_order__delivery_start_date
+msgid "Delivery Start date"
+msgstr "Leistungsstartdatum"
+
+#. module: account_delivery_dates
+#: model_terms:ir.ui.view,arch_db:account_delivery_dates.delivery_date_move_form
+#: model_terms:ir.ui.view,arch_db:account_delivery_dates.delivery_date_order_form
+msgid "Delivery time frame"
+msgstr "Leistungszeitraum"
+
+#. module: account_delivery_dates
+#: model:ir.model,name:account_delivery_dates.model_account_move
+msgid "Journal Entries"
+msgstr "Buchungssätze"
+
+#. module: account_delivery_dates
+#: model:ir.model,name:account_delivery_dates.model_account_move_line
+msgid "Journal Item"
+msgstr "Buchungszeile"
+
+#. module: account_delivery_dates
+#: model:ir.model,name:account_delivery_dates.model_sale_order
+msgid "Sales Order"
+msgstr "Verkaufsauftrag "
+
+#. module: account_delivery_dates
+#: model_terms:ir.ui.view,arch_db:account_delivery_dates.delivery_date_move_form
+#: model_terms:ir.ui.view,arch_db:account_delivery_dates.delivery_date_order_form
+msgid "to"
+msgstr "bis"

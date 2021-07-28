@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="default_column_A" model="datev_export.column">
+        <field name="header">Umsatz (ohne Soll/Haben-Kz)</field>
+        <field name="value">gross_value</field>
+    </record>
+    <record id="default_column_B" model="datev_export.column">
+        <field name="header">Soll/Haben-Kennzeichen</field>
+        <field name="value">soll_haben</field>
+    </record>
+    <record id="default_column_C" model="datev_export.column">
+        <field name="header">WKZ Umsatz</field>
+        <field name="value">currency</field>
+    </record>
+    <record id="default_column_D" model="datev_export.column">
+        <field name="header">Kurs</field>
+        <field name="value">rate</field>
+    </record>
+    <record id="default_column_E" model="datev_export.column">
+        <field name="header">Basis-Umsatz</field>
+        <field name="value"></field>
+    </record>
+    <record id="default_column_F" model="datev_export.column">
+        <field name="header">WKZ Basis-Umsatz</field>
+        <field name="value">foreign_amount</field>
+    </record>
+    <record id="default_column_G" model="datev_export.column">
+        <field name="header">Konto</field>
+        <field name="value">account</field>
+    </record>
+    <record id="default_column_H" model="datev_export.column">
+        <field name="header">Gegenkonto (ohne BU-Schlüssel)</field>
+        <field name="value">counteraccount</field>
+    </record>
+    <record id="default_column_I" model="datev_export.column">
+        <field name="header">BU-Schlüssel</field>
+        <field name="value">bookingkey</field>
+    </record>
+    <record id="default_column_J" model="datev_export.column">
+        <field name="header">Belegdatum</field>
+        <field name="value">date_ddmm</field>
+    </record>
+    <record id="default_column_K" model="datev_export.column">
+        <field name="header">Belegfeld 1</field>
+        <field name="value">bookingreference</field>
+    </record>
+    <record id="default_column_L" model="datev_export.column">
+        <field name="header">Belegfeld 2</field>
+        <field name="value">date</field>
+    </record>
+    <record id="default_column_M" model="datev_export.column">
+        <field name="header">Skonto</field>
+        <field name="value"></field>
+    </record>
+    <record id="default_column_N" model="datev_export.column">
+        <field name="header">Buchungstext</field>
+        <field name="value">account_move_line_name</field>
+    </record>
+</odoo>

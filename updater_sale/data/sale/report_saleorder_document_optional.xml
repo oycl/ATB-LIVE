@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Black & White Document -->
+  <template id="report_saleorder_document_inherit_sale_management_bw" inherit_id="updater_sale.report_saleorder_document_bw">
+    <xpath expr="//div[@name='signature']" position="after">
+      <div t-if="doc.sale_order_option_ids and doc.state in ['draft', 'sent']">
+        <t t-set="has_option_discount" t-value="any(option.discount != 0.0 for option in doc.sale_order_option_ids)" />
+        <h4 name="h_optional_products">
+          <span>Options</span>
+        </h4>
+        <table name="table_optional_products" class="table table-sm mb-3">
+          <t t-set="pos" t-value="1" />
+          <thead>
+            <tr>
+              <th name="th_option_pos" style="border-top:0px;border-bottom:1px solid black;font-size:14px;" class="text-center font-weight-bold">Pos.</th>
+              <th name="th_option_name" style="border-top:0px;border-bottom:1px solid black;font-size:14px;" class="text-left">Description</th>
+              <th name="th_option_qty" style="border-top:0px;border-bottom:1px solid black;font-size:14px;" class="text-center font-weight-bold">Qty</th>
+              <th t-if="has_option_discount" style="border-top:0px;border-bottom:1px solid black;font-size:14px;" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-left">Disc.%</th>
+              <th name="th_option_price_unit" style="border-top:0px;border-bottom:1px solid black;font-size:14px;" class="text-right">Unit Price</th>
+            </tr>
+          </thead>
+          <tbody class="sale_tbody">
+            <tr t-foreach="doc.sale_order_option_ids" t-as="option">
+              <td class="text-center" name="td_option_pos" style="background-color: #FFF;border-top:1px solid black;border-bottom:1px solid black;font-size:14px;">
+                <span t-esc="pos" />
+              </td>
+              <td name="td_option_name" style="background-color: #FFF;border-top:1px solid black;border-bottom:1px solid black;font-size:14px;">
+                <span t-field="option.name" />
+              </td>
+              <td class="text-center" name="td_option_qty" style="background-color: #FFF;border-top:1px solid black;border-bottom:1px solid black;font-size:14px;">
+                <span t-esc="'%.0f' % option.quantity" />
+              </td>
+              <td t-if="has_option_discount" name="td_option_discount" groups="product.group_discount_per_so_line" style="background-color: #FFF;border-top:1px solid black;border-bottom:1px solid black;font-size:14px;">
+                <strong t-if="option.discount != 0.0" class="text-info">
+                  <t t-esc="((option.discount % 1) and '%s' or '%d') % option.discount" />%
+                </strong>
+              </td>
+              <td name="td_option_price_unit" style="background-color: #FFF;border-top:1px solid black;border-bottom:1px solid black;font-size:14px;">
+                <div class="text-right">
+                  <div t-field="option.price_unit" t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}' t-att-style="option.discount and 'text-decoration: line-through' or None" t-att-class="option.discount and 'text-danger' or None" />
+                  <div t-if="option.discount">
+                    <t t-esc="'%.2f' % ((1-option.discount / 100.0) * option.price_unit)" />
+                  </div>
+                </div>
+              </td>
+              <t t-set="pos" t-value="pos+1" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </xpath>
+  </template>
+  <!-- Colorful Document -->
+  <template id="report_saleorder_document_inherit_sale_management_colorful" inherit_id="updater_sale.report_saleorder_document_colorful">
+    <xpath expr="//div[@name='signature']" position="after">
+      <div t-if="doc.sale_order_option_ids and doc.state in ['draft', 'sent']">
+        <t t-set="has_option_discount" t-value="any(option.discount != 0.0 for option in doc.sale_order_option_ids)" />
+        <h4 name="h_optional_products">
+          <span>Options</span>
+        </h4>
+        <table name="table_optional_products" class="table table-sm table-borderless mb-3">
+          <t t-if="doc.company_id.primary_color" t-set="color" t-value="doc.company_id.primary_color" />
+          <t t-else="" t-set="color" t-value="'#339966'" />
+          <t t-set="pos" t-value="1" />
+          <thead>
+            <tr>
+              <th name="th_option_pos" class="text-center font-weight-bold" t-attf-style="background-color: {{ color }};">Pos.</th>
+              <th name="th_option_name" class="text-left font-weight-bold" t-attf-style="background-color: {{ color }};">Description</th>
+              <th name="th_option_qty" class="text-center font-weight-bold" t-attf-style="background-color: {{ color }};">Qty</th>
+              <th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-center font-weight-bold" t-attf-style="background-color: {{ color }};">Disc.%</th>
+              <th name="th_option_price_unit" class="text-center font-weight-bold" t-attf-style="background-color: {{ color }};">Unit Price</th>
+            </tr>
+          </thead>
+          <tbody class="sale_tbody">
+            <t t-set="pos" t-value="1" />
+            <tr t-foreach="doc.sale_order_option_ids" t-as="option">
+              <td name="td_option_pos">
+                <span t-esc="pos" />
+              </td>
+              <td name="td_option_name">
+                <span t-field="option.name" />
+              </td>
+              <td class="text-center" name="td_option_qty">
+                <span t-esc="'%.0f' % option.quantity" />
+              </td>
+              <td class="text-center" t-if="has_option_discount" name="td_option_discount" groups="product.group_discount_per_so_line">
+                <strong t-if="option.discount != 0.0" class="text-info">
+                  <t t-esc="((option.discount % 1) and '%s' or '%d') % option.discount" />
+                  %
+                </strong>
+              </td>
+              <td name="td_option_price_unit">
+                <div class="text-right">
+                  <div t-field="option.price_unit" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}" t-att-style="option.discount and 'text-decoration: line-through' or None" t-att-class="option.discount and 'text-danger' or None" />
+                  <div t-if="option.discount">
+                    <t t-esc="'%.2f' % ((1-option.discount / 100.0) * option.price_unit)" />
+                  </div>
+                </div>
+              </td>
+              <t t-set="pos" t-value="pos+1" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </xpath>
+  </template>
+  <!-- Slick Document -->
+  <template id="report_saleorder_document_inherit_sale_management_slick" inherit_id="updater_sale.report_saleorder_document_slick">
+    <xpath expr="//div[@name='signature']" position="after">
+      <div t-if="doc.sale_order_option_ids and doc.state in ['draft', 'sent']">
+        <t t-set="has_option_discount" t-value="any(option.discount != 0.0 for option in doc.sale_order_option_ids)" />
+        <h4 name="h_optional_products">
+          <span>Options</span>
+        </h4>
+        <table name="table_optional_products" class="table table-sm mb-3">
+          <t t-set="pos" t-value="1" />
+          <thead>
+            <tr>
+              <th name="th_option_pos" style="border-top:0px;border-bottom:1px solid black;">Pos.</th>
+              <th name="th_option_name" class="text-left" style="border-top:0px;border-bottom:1px solid black;">Description</th>
+              <th name="th_option_qty" class="text-center" style="border-top:0px;border-bottom:1px solid black;">Quantity</th>
+              <th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-left" style="border-top:0px;border-bottom:1px solid black;">Disc.%</th>
+              <th name="th_option_price_unit" style="border-top:0px;border-bottom:1px solid black;" class="text-right">Unit Price</th>
+            </tr>
+          </thead>
+          <tbody class="sale_tbody">
+            <tr t-foreach="doc.sale_order_option_ids" t-as="option">
+              <td name="td_option_pos" style="border-top:1px solid black;border-bottom:1px solid black;">
+                <span t-esc="pos" />
+              </td>
+              <td name="td_option_name" style="border-top:1px solid black;border-bottom:1px solid black;">
+                <span t-field="option.name" />
+              </td>
+              <td class="text-center" name="td_option_qty" style="border-top:1px solid black;border-bottom:1px solid black;">
+                <span t-esc="'%.1f' % option.quantity" />
+              </td>
+              <td t-if="has_option_discount" name="td_option_discount" groups="product.group_discount_per_so_line" style="border-top:1px solid black;border-bottom:1px solid black;">
+                <strong t-if="option.discount != 0.0" class="text-info">
+                  <t t-esc="((option.discount % 1) and '%s' or '%d') % option.discount" />%
+                </strong>
+              </td>
+              <td name="td_option_price_unit" style="border-top:1px solid black;border-bottom:1px solid black;">
+                <div class="text-right">
+                  <div t-field="option.price_unit" t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}' t-att-style="option.discount and 'text-decoration: line-through' or None" t-att-class="option.discount and 'text-danger' or None" />
+                  <div t-if="option.discount">
+                    <t t-esc="'%.2f' % ((1-option.discount / 100.0) * option.price_unit)" />
+                  </div>
+                </div>
+              </td>
+              <t t-set="pos" t-value="pos+1" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </xpath>
+  </template>
+</odoo>

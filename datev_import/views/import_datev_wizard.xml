@@ -1,0 +1,55 @@
+<!-- Views for import_wizard and its menuitem. -->
+<odoo>
+    <record id="import_datev_wizard_form" model="ir.ui.view">
+        <field name="name">datev_import.import_wizard.form</field>
+        <field name="model">datev_import.import_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Datev">
+                <sheet>
+                    <group>
+                        <field name="personenkonto" string="Personenkonto"/>
+                        <field name="year" string="Jahr" options='{"type": "number", "step": 1}'/>
+                        <field name="month" string="Monat" options='{"type": "number", "step": 1}'/>
+                        <field name="default_partner" string="Default Partner"/>
+                        <field name="col_groupby" string="Gruppierung"/>
+                        <field name="col_text" string="Zeilenbeschriftung"/>
+                        <field name="journal_konto_is_personen" string="Personenkonto für Journal nutzen"/>
+                        <field name="add_analytic_accounts" string="Analytic Accounts hinzufügen"/>
+                        <field name="account_padding" string="Kontolänge"/>
+                        <field name="encoding" string="Encoding"/>
+                        <button name="show_account_to_journal_mapping" icon="fa-arrow-right" type="object" string="Edit account to journal mapping" class="btn-link"/>
+                    </group>
+                    <group>
+                        <field name="files" widget="many2many_binary"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <div>
+                      <p style="float:left;">
+                           <button string='Import' name="run" type="object" class="oe_highlight"
+                            attrs="{'invisible':['|', '|',
+                                ('files', '=', False),
+                                ('journal_konto_is_personen', '=', False),
+                                ('personenkonto', '=', False),
+                                ('personenkonto', '=', False),
+                            ]}"
+                            />
+                      </p>
+                      <p style="float:right;">
+                          <button string="Cancel" class="oe_link" special="cancel"/>
+                      </p>
+                    </div>
+                    <div style="clear:both;"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+    <record id="import_datev_wizard_action" model="ir.actions.act_window">
+        <field name="name">Import Datev Wizard</field>
+        <field name="res_model">datev_import.import_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="import_datev_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_action_open_import_datev" name="Import Datev" action="import_datev_wizard_action" sequence="5" parent="account.menu_finance_entries_actions"/>
+</odoo>

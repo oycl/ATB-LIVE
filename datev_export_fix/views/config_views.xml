@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--    Adds links to list of importer accounts and import lines to settings.    -->
+        <record id="datev_export_fix.config" model="ir.ui.view">
+            <field name="name">Datev Export Configuration</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="30"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="datev-export" string="Datev Export" data-key="datev-export" groups="base.group_user">
+                        <h2>Sachkonten</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="length_general_accounts" string="Länge Sachkonten" class="col-md-3 o_light_label"/>
+                                            <field name="length_general_accounts" widget="integer"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Personenkonten</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <label for="direkte_bebuchung_personenkonten" string="Direkte Bebuchung" class="col-md-3 o_light_label"/>
+                                        <field name="direkte_bebuchung_personenkonten"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16" attrs="{'invisible': [['direkte_bebuchung_personenkonten', '=', False]]}">
+                                            <label for="length_personal_accounts" string="Länge Personenkonten" class="col-md-3 o_light_label"/>
+                                            <field name="length_personal_accounts" widget="integer"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16" attrs="{'invisible': [['direkte_bebuchung_personenkonten', '=', True]]}">
+                                            <label for="payable_format" string="Format Debitoren" class="col-md-3 o_light_label"/>
+                                            <field name="receivable_format" widget="integer"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16" attrs="{'invisible': [['direkte_bebuchung_personenkonten', '=', True]]}">
+                                            <label for="payable_format" string="Format Kreditoren" class="col-md-3 o_light_label"/>
+                                            <field name="payable_format" widget="integer"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Spaltenkonfiguration</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <!--label string="Forwarding addresses"/-->
+                                    <div class="text-muted">
+                                        Liste der Spalten im Datev Export.
+                                    </div>
+                                    <div class="content-group">
+                                        <div class="mt16">
+                                            <button name="show_datev_export_columns_list" icon="fa-arrow-right" type="object" string="Spalten bearbeiten" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="text-muted">
+                                        Liste der Partnerspalten im Datev Export.
+                                    </div>
+                                    <div class="content-group">
+                                        <div class="mt16">
+                                            <button name="show_datev_partner_export_columns_list" icon="fa-arrow-right" type="object" string="Partnerspalten bearbeiten" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Unterorder erstellen</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <label for="sub_folders_enabled" string="Aktiviert" class="col-md-3 o_light_label"/>
+                                        <field name="sub_folders_enabled"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="datev_export_column_tree" model="ir.ui.view">
+            <field name="name">datev_export.column.tree</field>
+            <field name="model">datev_export.column</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" create='true' default_order='id asc'>
+                    <field name="column" string="Spalte"/>
+                    <field name="header" string="Kopfzeile"/>
+                    <field name="value" string="Wert"/>
+                    <field name="max_length" string="Max Länge"/>
+                </tree>
+            </field>
+        </record>
+        <record id="datev_export_partner_column_tree" model="ir.ui.view">
+            <field name="name">datev_export.partner.column.tree</field>
+            <field name="model">datev_export.partner_column</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" create='true' default_order='id asc'>
+                    <field name="column" string="Spalte"/>
+                    <field name="header" string="Kopfzeile"/>
+                    <field name="value" string="Wert"/>
+                    <field name="max_length" string="Max Länge"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

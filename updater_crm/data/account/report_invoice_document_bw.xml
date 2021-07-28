@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="report_invoice_document_bw_crm_custom" inherit_id="updater_account.report_invoice_document_bw">
+    <xpath expr="//div[hasclass('col-8')][last()]" position="replace">
+      <div class="col-8">
+        <span t-if="o.team_id and o.team_id.report_text" t-field="o.team_id.report_text" />
+        <span t-elif="o.move_type not in ['out_refund', 'in_refund']">
+          Please transfer the amount by&#160; <span t-field="o.invoice_date_due" t-options="{&quot;widget&quot;: &quot;date&quot;}" />.
+        </span>
+        <p>Thank you for your cooperation.</p>
+        <p>
+          <span t-field="o.narration" />
+        </p>
+      </div>
+    </xpath>
+  </template>
+</odoo>

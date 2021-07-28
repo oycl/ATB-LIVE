@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="layout_much_slick" model="report.layout">
+      <field name="name">Slick</field>
+      <field name="view_id" ref="updater.external_layout_standard_slick" />
+      <field name="pdf">/web/static/pdf/preview_standard.pdf</field>
+      <field name="image">/web/static/img/preview_standard.png</field>
+    </record>
+
+    <record id="layout_much_colorful" model="report.layout">
+      <field name="name">Colorful</field>
+      <field name="view_id" ref="updater.external_layout_standard_colorful" />
+      <field name="pdf">/web/static/pdf/preview_standard.pdf</field>
+      <field name="image">/web/static/img/preview_standard.png</field>
+    </record>
+
+    <record id="layout_much_bw" model="report.layout">
+      <field name="name">Black &amp; White</field>
+      <field name="view_id" ref="updater.external_layout_standard_bw" />
+      <field name="pdf">/web/static/pdf/preview_standard.pdf</field>
+      <field name="image">/web/static/img/preview_standard.png</field>
+    </record>
+  </data>
+</odoo>

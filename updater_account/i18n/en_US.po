@@ -1,0 +1,524 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_account
+# much. GmbH <info@muchconsulting.de>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-07 08:27+0000\n"
+"PO-Revision-Date: 2021-07-07 10:36+0200\n"
+"Last-Translator: much. GmbH <info@muchconsulting.de>\n"
+"Language-Team: English US <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: en_US\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid ""
+"&amp;nbsp;\n"
+"                        <span>on</span>"
+msgstr ""
+"&amp;nbsp;\n"
+"                        <span>on</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</"
+"span>\n"
+"                    <span groups=\"account."
+"group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</"
+"span>\n"
+"                    <span groups=\"account."
+"group_show_line_subtotals_tax_included\">Total Price</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span style=\"margin-left: 20px;\">Subtotal Net</span>"
+msgstr "<span style=\"margin-left: 20px;\">Subtotal Net</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid ""
+"<span style=\"margin-left: 21px;\">\n"
+"                    <strong>Total</strong>\n"
+"                  </span>"
+msgstr ""
+"<span style=\"margin-left: 21px;\">\n"
+"                    <strong>Total</strong>\n"
+"                  </span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span>Amount</span>"
+msgstr "<span>Amount</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span>Description</span>"
+msgstr "<span>Description</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<span>Disc.%</span>"
+msgstr "<span>Disc.%</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span>Discount</span>"
+msgstr "<span>Discount</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span>Price</span>"
+msgstr "<span>Price</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span>Quantity</span>"
+msgstr "<span>Quantity</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<span>Source Document</span>"
+msgstr "<span>Source Document</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<span>Taxes</span>"
+msgstr "<span>Taxes</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<span>Unit Price</span>"
+msgstr "<span>Unit Price</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "<span>on</span>"
+msgstr "<span>on</span>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "<strong class=\"mr16\">Section Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Section Subtotal</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "<strong class=\"mr16\">Subtotal Net</strong>"
+msgstr "<strong class=\"mr16\">Subtotal Net</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Subtotal</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid ""
+"<strong class=\"text-center\">Scan me with your banking app.</strong>\n"
+"                <br/>\n"
+"                <br/>"
+msgstr ""
+"<strong class=\"text-center\">Scan me with your banking app.</strong>\n"
+"                <br/>\n"
+"                <br/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid ""
+"<strong class=\"text-center\">Scan me with your banking app.</strong>\n"
+"          <br/>\n"
+"          <br/>"
+msgstr ""
+"<strong class=\"text-center\">Scan me with your banking app.</strong>\n"
+"          <br/>\n"
+"          <br/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid ""
+"<strong class=\"text-center\">The SEPA QR Code informations are not set "
+"correctly.</strong>\n"
+"                <br/>"
+msgstr ""
+"<strong class=\"text-center\">The SEPA QR Code informations are not set "
+"correctly.</strong>\n"
+"                <br/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid ""
+"<strong class=\"text-center\">The SEPA QR Code informations are not set "
+"correctly.</strong>\n"
+"          <br/>"
+msgstr ""
+"<strong class=\"text-center\">The SEPA QR Code informations are not set "
+"correctly.</strong>\n"
+"          <br/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_slick
+msgid "<strong>Amount Due</strong>"
+msgstr "<strong>Amount Due</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Customer Code:</strong>"
+msgstr "<strong>Customer Code:</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid ""
+"<strong>Delivery Address:</strong>\n"
+"            <br style=\"line-height: 2px;\"/>"
+msgstr ""
+"<strong>Delivery Address:</strong>\n"
+"            <br style=\"line-height: 2px;\"/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>Due Date:</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Invoice Date:</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Reference:</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Source:</strong>"
+msgstr "<strong>Source:</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Article Nr."
+msgstr "Article Nr."
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Cancelled Invoice"
+msgstr "Cancelled Invoice"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Credit Note"
+msgstr "Credit Note"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Customer Nr.:"
+msgstr "Customer Nr.:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Customer Number:"
+msgstr "Customer Number:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Customer VAT ID:"
+msgstr "Customer VAT ID:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Date:"
+msgstr "Date:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Dear"
+msgstr "Dear"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Description"
+msgstr "Description"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Discount"
+msgstr "Discount"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Draft Invoice"
+msgstr "Draft Invoice"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Due Date:"
+msgstr "Due Date:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Invoice"
+msgstr "Invoice"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Invoice Date:"
+msgstr "Invoice Date:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Invoice Nr.:"
+msgstr "Invoice Nr.:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Net amount"
+msgstr "Net amount"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Net price"
+msgstr "Net price"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Order Nr.:"
+msgstr "Order Nr.:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Order number: #"
+msgstr "Order number: #"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Order:"
+msgstr "Order:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Our contact:"
+msgstr "Our contact:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_with_payments_slick
+msgid "Paid on"
+msgstr "Paid on"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Payment Terms:"
+msgstr "Payment Terms:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Payment terms:"
+msgstr "Payment terms:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Phone:"
+msgstr "Phone:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Please transfer the amount by"
+msgstr "Please transfer the amount by"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "Please use the following communication for your payment :"
+msgstr "Please use the following communication for your payment :"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Pos"
+msgstr "Pos"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Pos."
+msgstr "Pos."
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Price €"
+msgstr "Price €"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Qty"
+msgstr "Qty"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Quantity"
+msgstr "Quantity"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Ref:"
+msgstr "Ref:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Sales:"
+msgstr "Sales:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Subtotal (net)"
+msgstr "Subtotal (net)"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Tax"
+msgstr "Tax"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "Tax ID"
+msgstr "Tax ID"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Tax amount"
+msgstr "Tax amount"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Thank you for your business."
+msgstr "Thank you for your business."
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Thank you for your cooperation."
+msgstr "Thank you for your cooperation."
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Total"
+msgstr "Total"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Total Price"
+msgstr "Total Price"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Total amount"
+msgstr "Total amount"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Total €"
+msgstr "Total €"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Unit Price"
+msgstr "Unit Price"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "Valid until:"
+msgstr "Valid until:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Vendor Bill"
+msgstr "Vendor Bill"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "Vendor Credit Note"
+msgstr "Vendor Credit Note"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid "We refer to the VAT ID No."
+msgstr "We refer to the VAT ID No."
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_bw
+msgid "We will invoice you for our deliveries/services as follows:"
+msgstr "We will invoice you for our deliveries/services as follows:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Your Reference:"
+msgstr "Your Reference:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_colorful
+msgid "Your VAT ID:"
+msgstr "Your VAT ID:"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_slick
+msgid ""
+"Your invoice.\n"
+"          <br style=\"line-height: 2px;\"/>"
+msgstr ""
+"Your invoice.\n"
+"          <br style=\"line-height: 2px;\"/>"
+
+#. module: updater_account
+#: model_terms:ir.ui.view,arch_db:updater_account.report_invoice_document_much_custom
+msgid "on"
+msgstr "on"

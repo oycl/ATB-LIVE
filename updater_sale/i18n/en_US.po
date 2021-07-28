@@ -1,0 +1,446 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_sale
+# much. GmbH <info@muchconsulting.de>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-07 08:29+0000\n"
+"PO-Revision-Date: 2021-07-07 10:51+0200\n"
+"Last-Translator: much. GmbH <info@muchconsulting.de>\n"
+"Language-Team: English US <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: en_US\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid ""
+"&amp;nbsp;\n"
+"                              <span>on</span>\n"
+"                              &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                              <span>on</span>\n"
+"                              &amp;nbsp;"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid ""
+"&amp;nbsp;\n"
+"                        <span>on</span>\n"
+"                        &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                        <span>on</span>\n"
+"                        &amp;nbsp;"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid ""
+"&amp;nbsp;\n"
+"                      <span>on</span>\n"
+"                      &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                      <span>on</span>\n"
+"                      &amp;nbsp;"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<b>Invoice address:</b>"
+msgstr "<b>Invoice address:</b>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<b>Shipping address:</b>"
+msgstr "<b>Shipping address:</b>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<span>Disc.%</span>"
+msgstr "<span>Disc.%</span>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_slick
+msgid "<span>Options</span>"
+msgstr "<span>Options</span>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<span>Pro-Forma Invoice # </span>"
+msgstr "<span>Pro-Forma Invoice # </span>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<span>Pro-Forma Invoice </span>"
+msgstr "<span>Pro-Forma Invoice </span>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "<span>Pro-Forma Invoice N° </span>"
+msgstr "<span>Pro-Forma Invoice N° </span>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<span>Total Net</span>"
+msgstr "<span>Total Net</span>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Subtotal</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Expiration:</strong>"
+msgstr "<strong>Expiration:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>Fiscal Position Remark:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Order Date:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Quotation Date:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Salesperson:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Shipping Address:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Signature</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "<strong>Total:</strong>"
+msgstr "<strong>Total:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>Your Reference:</strong>"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Amount"
+msgstr "Amount"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Article"
+msgstr "Article"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Article No."
+msgstr "Article No."
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Cancelled Order N°"
+msgstr "Cancelled Order N°"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Customer Nr.:"
+msgstr "Customer Nr.:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Customer Number:"
+msgstr "Customer Number:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Customer Ref.:"
+msgstr "Customer Ref.:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Customer Reference:"
+msgstr "Customer Reference:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Date:"
+msgstr "Date:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Dear"
+msgstr "Dear"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Delivery Date:"
+msgstr "Delivery Date:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_slick
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Description"
+msgstr "Description"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_slick
+msgid "Disc.%"
+msgstr "Disc.%"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Discount"
+msgstr "Discount"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Email:"
+msgstr "Email:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Expiration:"
+msgstr "Expiration:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Invoicing Address:"
+msgstr "Invoicing Address:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Invoicing and Shipping Address:"
+msgstr "Invoicing and Shipping Address:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Net price"
+msgstr "Net price"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Net total:"
+msgstr "Net total:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Order"
+msgstr "Order"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Order #"
+msgstr "Order #"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Order Confirmation N°"
+msgstr "Order Confirmation N°"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Order Nr.:"
+msgstr "Order Nr.:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Our contact:"
+msgstr "Our contact:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Payment Terms:"
+msgstr "Payment Terms:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Payment in"
+msgstr "Payment in"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Payment terms:"
+msgstr "Payment terms:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Phone:"
+msgstr "Phone:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_slick
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Pos."
+msgstr "Pos."
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Price"
+msgstr "Price"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_colorful
+msgid "Qty"
+msgstr "Qty"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_slick
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Quantity"
+msgstr "Quantity"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Quotation"
+msgstr "Quotation"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Quotation #"
+msgstr "Quotation #"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+msgid "Quotation N°"
+msgstr "Quotation N°"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Sales:"
+msgstr "Sales:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Subtotal (net)"
+msgstr "Subtotal (net)"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Tax"
+msgstr "Tax"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Taxes"
+msgstr "Taxes"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "The offer is valid until:"
+msgstr "The offer is valid until:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "Total"
+msgstr "Total"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Total Price"
+msgstr "Total Price"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Total amount"
+msgstr "Total amount"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Total €"
+msgstr "Total €"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_bw
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_colorful
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_inherit_sale_management_slick
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_much_custom
+msgid "Unit Price"
+msgstr "Unit Price"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Unit €"
+msgstr "Unit €"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "Validity Date:"
+msgstr "Validity Date:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_bw
+msgid "With pleasure we offer you:"
+msgstr "With pleasure we offer you:"
+
+#. module: updater_sale
+#: model_terms:ir.ui.view,arch_db:updater_sale.report_saleorder_document_slick
+msgid "we hereby offer you:"
+msgstr "we hereby offer you:"

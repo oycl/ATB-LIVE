@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+datev_export_column,datev_export.column,model_datev_export_column,base.group_user,1,1,1,1
+datev_export_partner_column,datev_export.partner_column,model_datev_export_partner_column,base.group_user,1,1,1,1

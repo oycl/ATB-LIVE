@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_datev_import_journal_mapping,access_datev_import_journal_mapping,model_datev_import_journal_mapping,base.group_user,1,1,1,1
+
+
+access_datev_import_import_wizard,access_datev_import_import_wizard,model_datev_import_import_wizard,base.group_user,1,1,1,1
+access_datev_import_import_people_wizard,access_datev_import_import_people_wizard,model_datev_import_import_people_wizard,base.group_user,1,1,1,1
+access_datev_import_reconcile,access_import_reconcile,model_datev_import_reconcile,base.group_user,1,1,1,1

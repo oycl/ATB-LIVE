@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <record id="updater.config" model="ir.ui.view">
+      <field name="name">much. Color Configurator</field>
+      <field name="model">res.config.settings</field>
+      <field name="priority" eval="30" />
+      <field name="inherit_id" ref="base.res_config_settings_view_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//div[hasclass('settings')]" position="inside">
+          <!-- TODO: Finish the color CSS generator/updater before adding setting view -->
+          <div class="app_settings_block" style="display: none;" data-string="updater" string="much. Updater" data-key="updater" groups="base.group_user">
+            <h2>Color Settings</h2>
+            <div class="row mt16 o_settings_container">
+              <div class="col-xs-12 col-md-6 o_setting_box">
+                <div class="o_setting_right_pane">
+                  <!-- <label string="Primary Color"/> -->
+                  <h3>Colors</h3>
+                  <div class="text-muted">
+                      Colors for Odoo UI.
+                    </div>
+                  <div class="content-group">
+                    <div class="row mt16">
+                      <label for="primary_color" string="Primary Color" class="col-md-3 o_light_label" />
+                      <field name="primary_color" widget="color" />
+                      <label for="accent_color" string="Accent Color" class="col-md-3 o_light_label mt-3" />
+                      <field name="accent_color" widget="color" class="mt-3" />
+                      <label for="custom_secondary" string="Has custom secondary color?" class="col-md-3 o_light_label" />
+                      <field name="custom_secondary" widget="boolean" style="padding-left: 25px;padding-top: 15px;" />
+                      <label for="secondary_color" string="Secondary Color" class="col-md-3 o_light_label mt-3" attrs="{'invisible':[('custom_secondary','=',False)]}" />
+                      <field name="secondary_color" widget="color" class="mt-3" attrs="{'invisible':[('custom_secondary','=',False)]}" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 o_setting_box">
+                <div class="o_setting_right_pane">
+                  <!-- <label string="Secondary Color"/> -->
+                  <h3>Background</h3>
+                  <div class="text-muted">
+                      Odoo home page background settings (Only for enterprise Odoo).
+                    </div>
+                  <div class="content-group">
+                    <div class="row mt16">
+                      <label for="primary_background_color" string="Primary Background Color" class="col-md-3 o_light_label" />
+                      <field name="primary_background_color" widget="color" style="padding-left: 15px;" />
+                      <label for="secondary_background_color" string="Secondary Background Color" class="col-md-3 o_light_label mt-3" />
+                      <field name="secondary_background_color" widget="color" style="padding-left: 15px;" class="mt-3" />
+                      <label for="logo_background_url" string="Background Custom Logo (URL)" class="col-md-3 o_light_label mt-3" />
+                      <field name="logo_background_url" widget="url" class="mt-3" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

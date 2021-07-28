@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="1">
+    <record id="paperformat_much_base" model="report.paperformat">
+      <field name="name">Base Paper Format</field>
+      <field name="default" eval="True" />
+      <field name="format">Letter</field>
+      <field name="page_height">0</field>
+      <field name="page_width">0</field>
+      <field name="orientation">Portrait</field>
+      <field name="margin_top">40</field>
+      <field name="margin_bottom">25</field>
+      <field name="margin_left">7</field>
+      <field name="margin_right">7</field>
+      <field name="header_line" eval="False" />
+      <field name="header_spacing">35</field>
+      <field name="dpi">90</field>
+    </record>
+
+    <record id="paperformat_much_colorful" model="report.paperformat">
+      <field name="name">Colorful Paper Format</field>
+      <field name="default" eval="False" />
+      <field name="format">Letter</field>
+      <field name="page_height">0</field>
+      <field name="page_width">0</field>
+      <field name="orientation">Portrait</field>
+      <field name="margin_top">40</field>
+      <field name="margin_bottom">43</field>
+      <field name="margin_left">0</field>
+      <field name="margin_right">6</field>
+      <field name="header_line" eval="False" />
+      <field name="header_spacing">35</field>
+      <field name="dpi">90</field>
+    </record>
+
+    <record id="paperformat_much_slick" model="report.paperformat">
+      <field name="name">Slick Paper Format</field>
+      <field name="default" eval="False" />
+      <field name="format">Letter</field>
+      <field name="page_height">0</field>
+      <field name="page_width">0</field>
+      <field name="orientation">Portrait</field>
+      <field name="margin_top">55</field>
+      <field name="margin_bottom">28</field>
+      <field name="margin_left">12</field>
+      <field name="margin_right">12</field>
+      <field name="header_line" eval="False" />
+      <field name="header_spacing">60</field>
+      <field name="dpi">90</field>
+    </record>
+    
+    <record id="paperformat_much_bw" model="report.paperformat">
+      <field name="name">BW Paper Format</field>
+      <field name="default" eval="False" />
+      <field name="format">Letter</field>
+      <field name="page_height">0</field>
+      <field name="page_width">0</field>
+      <field name="orientation">Portrait</field>
+      <field name="margin_top">40</field>
+      <field name="margin_bottom">35</field>
+      <field name="margin_left">10</field>
+      <field name="margin_right">10</field>
+      <field name="header_line" eval="False" />
+      <field name="header_spacing">35</field>
+      <field name="dpi">90</field>
+    </record>
+  </data>
+</odoo>

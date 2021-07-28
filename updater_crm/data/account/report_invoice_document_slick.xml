@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="report_invoice_document_slick_crm_custom" inherit_id="updater_account.report_invoice_document_slick">
+    <xpath expr="//div[hasclass('page')]/p[1]" position="before">
+      <div class="mt-4">
+        <span t-if="o.team_id and o.team_id.report_text" t-field="o.team_id.report_text" />
+      </div>
+    </xpath>
+  </template>
+</odoo>

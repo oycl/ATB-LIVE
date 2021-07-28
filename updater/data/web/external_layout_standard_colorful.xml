@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="external_layout_standard_colorful" model="ir.ui.view">
+    <field name="name">external_layout_standard_colorful</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+<t t-name="updater.external_layout_standard_colorful">
+  <div class="header">
+    <div class="row" style="margin-left: 6mm;">
+      <div class="col-12 pb-2 pt-4 text-center">
+        <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="max-height: 65px;" alt="Logo" />
+      </div>
+    </div>
+    <div class="row" style="margin-left: 6mm;">
+      <div t-if="company.logo or company.report_header" class="row zero_min_height">
+        <div class="col-12"></div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 6mm;">
+      <div class="col-12 text-muted" style="font-size:14px;" name="company_address"></div>
+    </div>
+  </div>
+
+
+  <div class="article o_report_layout_standard" style="margin-left: 9mm;" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+    <div style="padding-top: 72mm;margin-left: -9mm;position: absolute;background-color: rgba(255, 255, 255, 0.0);">
+      <b>—</b>
+    </div>
+    <div style="padding-top: 189mm;margin-left: -9mm;position: absolute;background-color: rgba(255, 255, 255, 0.0);">
+      <b>—</b>
+    </div>
+    <t t-raw="0" />
+  </div>
+
+  <t t-set="spacing" t-value="'pt-1'" />
+  <div t-attf-class="footer o_standard_footer {{ spacing }}" style="margin-left: 6mm;">
+    <div class="row">
+      <div class="col-12 text-muted pb-2" style="font-size:13px;">
+        <span>
+          Sale and delivery according to indicated payment terms and general terms &amp; conditions of <t t-esc="company.name" />.
+        </span>
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 small text-left">
+        <ul class="list-inline mb4">
+          <li t-if="company.name" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            <span t-field="company.name" />
+            <br />
+          </li>
+          <li t-if="company.street" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            <span t-esc="company.street" />
+            <br />
+          </li>
+          <li t-if="company.street2" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            <span t-esc="company.street2" />&#160;-&#160;<span t-esc="company.zip" />&#160;<span t-esc="company.city" />
+            <br />
+          </li>
+          <li t-else="" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            <span t-esc="company.zip" />&#160;<span t-esc="company.city" />
+            <br />
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 small text-left">
+        <ul class="list-inline mb4">
+          <li t-if="company.phone" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            Tel.:
+            <span t-field="company.phone" />
+            <br />
+          </li>
+          <li t-if="company.managing_partner" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            <span>
+              Managing Directors: <t t-raw="company.managing_partner" />
+              <br />
+            </span>
+          </li>
+          <li t-if="company.website" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            <span t-field="company.website" />
+            <br />
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 small text-left">
+        <ul class="list-inline mb4">
+          <t t-foreach="company.partner_id.bank_ids" t-as="bank">
+            <li t-if="bank.bank_name" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+              <t t-esc="bank.bank_name" />
+              <br />
+            </li>
+            <li t-if="bank.acc_number" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+              IBAN:
+              <t t-esc="bank.acc_number" />
+              <br />
+            </li>
+            <li t-if="bank.bank_bic" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+              BIC/SWIFT-Code:
+              <t t-esc="bank.bank_bic" />
+            </li>
+          </t>
+        </ul>
+      </div>
+      <div class="col-3 small text-left">
+        <ul class="list-inline mb4">
+          <li t-if="company.company_registry" class="d-inline text-muted" style="font-size:12px;">
+            <span t-field="company.company_registry" />
+            <br />
+          </li>
+          <li t-if="company.vat" class="list-inline-item d-inline text-muted" style="font-size:12px;">
+            VAT-IdNr.:
+            <span t-field="company.vat" />
+            <br />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 py-2 text-center">
+        <div t-if="report_type == 'pdf'" class="text-muted float-right">
+          Page:&#160;<span class="page" />&#160;of&#160;<span class="topage" />
+        </div>
+      </div>
+    </div>
+  </div>
+</t>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,68 @@
+<!-- Views for import_wizard and its menuitem. -->
+<odoo>
+    <record id="import_people_wizard_form" model="ir.ui.view">
+        <field name="name">datev_import.import_people_wizard.form</field>
+        <field name="model">datev_import.import_people_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Datev Accounts">
+                <sheet>
+                    <h3>Spaltennamen Kontakt</h3>
+                    <group>
+                        <field name="col_type" string="Typ (enthält 1, 2)"/>
+                        <field name="col_account" string="Konto"/>
+                        <field name="col_name_company" string="Name Unternehmen"/>
+                        <field name="col_name_person" string="Name Person"/>
+                        <field name="col_vorname_person" string="Vorname Person"/>
+                        <field name="col_country" string="Land"/>
+                        <field name="col_vat" string="Steuern"/>
+                        <field name="col_street" string="Straße"/>
+                        <field name="col_zip" string="Postleitzahl"/>
+                        <field name="col_city" string="Ort"/>
+                        <field name="col_phone" string="Telefonnummer"/>
+                        <field name="col_email" string="E-Mail"/>
+                        <field name="col_website" string="Webseite"/>
+                    </group>
+                    <h3>Spaltennamen Kontoinformationen</h3>
+                    <group>
+                        <field name="col_bank" string="Bank"/>
+                        <field name="col_iban" string="IBAN"/>
+                    </group>
+                    <h3>Konto Präfixe</h3>
+                    <group>
+                        <field name="prefixes_account_payable" string="Präfixe für Kreditorenkonten (komma-getrennt)"/>
+                    </group>
+                    <hr/>
+                    <group>
+                        <field name="file" string="CSV"/>
+                    </group>
+                    <group attrs="{'invisible': [['warning', '=', False]]}">
+                        <field name="warning" decoration-danger="1" readonly="1"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <div>
+                      <p style="float:left;">
+                           <button string='Import' name="run" type="object" class="oe_highlight"
+                            attrs="{'invisible':['|', '|',
+                                ('file', '=', False),
+                            ]}"
+                            />
+                      </p>
+                      <p style="float:right;">
+                          <button string="Cancel" class="oe_link" special="cancel"/>
+                      </p>
+                    </div>
+                    <div style="clear:both;"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+    <record id="import_people_wizard_action" model="ir.actions.act_window">
+        <field name="name">Import Datev Accounts Wizard</field>
+        <field name="res_model">datev_import.import_people_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="import_people_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_action_open_import_people" name="Import Datev Accounts" action="import_people_wizard_action" sequence="5" parent="account.menu_finance_entries_actions" />
+</odoo>

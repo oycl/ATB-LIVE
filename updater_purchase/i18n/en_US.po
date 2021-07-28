@@ -1,0 +1,335 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* updater_purchase
+# much. GmbH <info@muchconsulting.de>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-07 08:28+0000\n"
+"PO-Revision-Date: 2021-07-07 10:47+0200\n"
+"Last-Translator: much. GmbH <info@muchconsulting.de>\n"
+"Language-Team: English US <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: en_US\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<span style=\"margin-left: 20px;\">Total Net</span>"
+msgstr "<span style=\"margin-left: 20px;\">Total Net</span>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid ""
+"<span style=\"margin-left: 21px;\">\n"
+"                  <strong>Total</strong>\n"
+"                </span>"
+msgstr ""
+"<span style=\"margin-left: 21px;\">\n"
+"                  <strong>Total</strong>\n"
+"                </span>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<span style=\"margin-left: 21px;\">Taxes</span>"
+msgstr "<span style=\"margin-left: 21px;\">Taxes</span>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "<strong class=\"mr16\">Section Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Section Subtotal</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Subtotal</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong class=\"mr16\">Total Net</strong>"
+msgstr "<strong class=\"mr16\">Total Net</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Amount</strong>"
+msgstr "<strong>Amount</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Article Nr.</strong>"
+msgstr "<strong>Article Nr.</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Article</strong>"
+msgstr "<strong>Article</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Date Req.</strong>"
+msgstr "<strong>Date Req.</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Date</strong>"
+msgstr "<strong>Date</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Delivery Address:</strong>"
+msgstr "<strong>Delivery Address:</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Description</strong>"
+msgstr "<strong>Description</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Incoterm: </strong>"
+msgstr "<strong>Incoterm: </strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Order Date:</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Payment terms: </strong>"
+msgstr "<strong>Payment terms: </strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Pos</strong>"
+msgstr "<strong>Pos</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Purchase Representative:</strong>"
+msgstr "<strong>Purchase Representative:</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Qty</strong>"
+msgstr "<strong>Purchase Representative:</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Quantity</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Shipping address:</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Taxes</strong>"
+msgstr "<strong>Taxes</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+msgid "<strong>Total amount</strong>"
+msgstr "<strong>Total amount</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Unit Price</strong>"
+msgstr "<strong>Unit Price</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "<strong>Unit Price</strong>"
+msgstr "<strong>Unit Price</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "<strong>Your Order Reference:</strong>"
+msgstr "<strong>Your Order Reference:</strong>"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Account no.:"
+msgstr "Account no.:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Cancelled Purchase Order"
+msgstr "Cancelled Purchase Order"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "Cancelled Purchase Order #"
+msgstr "Cancelled Purchase Order #"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Cancelled Purchase Order N°"
+msgstr "Cancelled Purchase Order N°"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Contact:"
+msgstr "Contact:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Date:"
+msgstr "Date:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Dear"
+msgstr "Dear"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Delivery"
+msgstr "Delivery"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Description"
+msgstr "Description"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Net Price"
+msgstr "Net Price"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Order Date:"
+msgstr "Order Date:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Our Customer Nr.:"
+msgstr "Our Customer Nr.:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Phone:"
+msgstr "Phone:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+msgid "Pos."
+msgstr "Pos."
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Purchase Order"
+msgstr "Purchase Order"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "Purchase Order #"
+msgstr "Purchase Order #"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Purchase Order N°"
+msgstr "Purchase Order N°"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Qty"
+msgstr "Qty"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Request for Quotation"
+msgstr "Request for Quotation"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "Request for Quotation #"
+msgstr "Request for Quotation #"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Request for Quotation N°"
+msgstr "Request for Quotation N°"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+msgid "Subtotal (Net)"
+msgstr "Subtotal (Net)"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_saleorder_document_much_custom
+msgid "Taxes"
+msgstr "Taxes"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Unit"
+msgstr "Unit"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Unit Price"
+msgstr "Unit Price"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+msgid "Units"
+msgstr "Unit Price"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_bw
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_colorful
+msgid "Vendor Ref:"
+msgstr "Vendor Ref:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "Your Quotation:"
+msgstr "Your Quotation:"
+
+#. module: updater_purchase
+#: model_terms:ir.ui.view,arch_db:updater_purchase.report_purchaseorder_document_slick
+msgid "we hereby order:"
+msgstr "we hereby order:"
